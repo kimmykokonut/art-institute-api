@@ -11,20 +11,22 @@ function getArtwork(artRequest) {
         ArtService.getItemInfo(itemInfoURL)
           .then(function (response2) {
             if (response2.data) {
-              let imgID = response2.data.image_id; 
+              let imgID = response2.data.image_id;
               ArtService.getImg(imgID)
                 .then(function (response3) {
                   if (response3) {
-                    printElements(response, artRequest, response2, response3); 
+                    printElements(response, artRequest, response2, response3);
+                  } else {
+                    printError(response, artRequest, response2, response3);
                   }
-                })
+                });
             }
-          })
-      } else {
-        printError(response, artRequest, response2, response3);
+          });
       }
     });
 }
+
+
 
 function printElements(response, artRequest, response2, response3) {
   const responseDiv = document.querySelector('#responseDiv');
@@ -36,12 +38,12 @@ function printElements(response, artRequest, response2, response3) {
   p2.innerHTML = pDescribe;
   const onView = response2.data.is_on_view;
   let onViewMessage;
-    if (onView === true) {
-      onViewMessage = "You currently can view this peice at our gallary."
-    } else {
-      onViewMessage = "This peice is not currently on view at our gallary."
-    }
-  p.append(`Here is the top result for ${artRequest}: ${response.data[0].title} by ${response2.data.artist_title}. ${onViewMessage}`); 
+  if (onView === true) {
+    onViewMessage = "You currently can view this piece at our gallery.";
+  } else {
+    onViewMessage = "This piece is not currently on view at our gallery.";
+  }
+  p.append(`Here is the top result for ${artRequest}: ${response.data[0].title} by ${response2.data.artist_title}. ${onViewMessage}`);
   responseDiv.append(p, img, p2);
 }
 

@@ -1,8 +1,8 @@
-# Template Repository
+# Art Institute Chicago API
 
-#### with __tests__, coverage, jest, .env, .gitignore, lint, cleanwebpack, htmlwebpack 
+#### using fetch, .env, .gitignore, lint, cleanwebpack, htmlwebpack 
 
-#### By (Your Name Here)
+#### By Kim Robinson & Brianca Knight & Grant Abel
 
 ## Technologies Used
 
