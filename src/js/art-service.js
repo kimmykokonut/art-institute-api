@@ -43,7 +43,6 @@ export default class ArtService {
               throw new Error(errorMessage);
             });
         } else {
-          console.log(response3);
           return response3.url;
         }
       })

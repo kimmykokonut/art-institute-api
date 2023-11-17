@@ -26,8 +26,6 @@ function getArtwork(artRequest) {
     });
 }
 
-
-
 function printElements(response, artRequest, response2, response3) {
   const responseDiv = document.querySelector('#responseDiv');
   const p = document.createElement('p');
@@ -65,5 +63,8 @@ function clearResults() {
 }
 
 window.addEventListener("load", function () {
+  const scrip = document.querySelector('#fontAwe');
+  scrip.src = `${process.env.FA_SRC}`;
+  scrip.crossorigin = `${process.env.FA_CO}`;
   document.querySelector("#art-form").addEventListener("submit", handleForm);
 });
