@@ -1,43 +1,48 @@
-# Art Institute Chicago API
+# Art Institute Chicago API Art Search
 
-#### using fetch, .env, .gitignore, lint, cleanwebpack, htmlwebpack 
-
-#### By Kim Robinson & Brianca Knight & Grant Abel
+#### By Kim Robinson & Brianca Knight
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* Javascript
+* Bootstrap
+* Html
+* CSS
+* webpack
+* npm
+* API calls using fetch
+* eslint
 
 ## Description
+### This is a pair project I worked on at Epicodus Bootcamp to practice using API calling skills.  This app uses two separate APIs to build a websit where you can search for a painting by keyword name and receive the title, artist, an image of the painting, a description of the painting and if the painting is currently on display at the Art Institute.
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+1. Navigate to my github repository for this project (https://github.com/kimmykokonut/art-institute-api)
+2. Click the 'Fork' button and you will be taken to a new page where you can give your repository a new name and description. Choose "create fork".
+3. Click the 'code' button and copy the url for HTTPS.
+4. On your local computer, create a working directory for my files and name appropriately.
+5. On your terminal, type $ git clone 'url' (using the url from step 3.)
+6. On your terminal, type $ code . to open in VS Code. If you do not have VS Code Editor, you may download here: https://code.visualstudio.com/
+7. Once in VS Code, open the terminal there and type $ npm install (to install the packages and dependencies).
+8. Update the files to your liking.  
+9. You do not need an API key for Chicago's Art Institute
+10. To see it rendered in a browser you can start a development server by typing $ npm run start in the VS Code terminal and it should open a browser window located at localhost.8080
+
+_If this is too much and you just want to see what it looks like, go to my github pages for this project here: https://kimmykokonut.github.io/art-institute-api_
+
+Optional:
+
+    If you want to build onto the project, you can run the terminal command $ npm run build
+    If you want to lint the JS files in the SRC folder you can run the terminal command $ npm run lint
+    If you want to run tests with Jest on the business logic you may do some in the terminal command $ npm run test
+    To learn more about npm, go here: https://www.freecodecamp.org/news/what-is-npm-a-node-package-manager-tutorial-for-beginners/
+
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* None known
 
 ## License
 
-When you create your template repository, take the time to add thorough installation/setup instructions to your README. This should include information on how to run the project:
-
-Installing all packages with $ npm install.
-
-Building the project using webpack with $ npm run build
-
-Starting a development server with $ npm run start
-
-Linting JS files in the src folder with $ npm run lint
-
-Running tests with Jest using $ npm run test
-
-Also, make sure you update the Technologies Used section of your README, too! There's been a host of new tech that we've used in our projects in this course section.
+MIT License. see license.md for more info.
